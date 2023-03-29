@@ -1,0 +1,9 @@
+apiVersion: 1
+datasources:
+  - name: Prometheus
+    uid: rxK_ByBVk
+    type: prometheus
+    url: http://prometheus-container:9090
+    isDefault: true
+    access: proxy
+    editable: true

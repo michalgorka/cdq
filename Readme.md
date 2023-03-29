@@ -11,3 +11,9 @@
 3. Go to docker directory and run `docker-compose up -d`
 
 ## Test
+- Run `mvn gatling:test`
+
+## Dashboard grafana
+- Login: admin
+- Password: admin
+- http://locahost:3000

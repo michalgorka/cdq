@@ -31,7 +31,10 @@ build/
 
 .idea/*
 .mvn/
-docker/grafana/*/
+docker/grafana/alerting
+docker/grafana/csv
+docker/grafana/plugins
+docker/grafana/png
 
 mvnw
 mvnw.cmd
