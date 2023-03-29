@@ -15,3 +15,5 @@ management:
       enabled: true
     prometheus:
       enabled: true
+server:
+  port: 9999

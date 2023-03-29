@@ -9,7 +9,7 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yaml'
     ports:
-      - "9999:9090"
+      - "9090:9090"
     restart: always
 
   grafana:
