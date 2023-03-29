@@ -1,6 +1,14 @@
 version: '2.1'
 
 services:
+  cdq:
+    image: cdq/demo:1.0.0
+    container_name: cdq-app
+    ports:
+      - "9999:9999"
+    environment:
+      - JAVA_TOOL_OPTIONS=-Xmx128000K
+
   prometheus:
     image: prom/prometheus:v2.38.0
     container_name: prometheus-container
@@ -9,7 +17,7 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yaml'
     ports:
-      - "9999:9090"
+      - "9090:9090"
     restart: always
 
   grafana:
